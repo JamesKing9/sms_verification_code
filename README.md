@@ -1,0 +1,2 @@
+# sms_verification_code
+ Android 应用发送验证码倒计时效果和自动获取验证码并填充到输入框
