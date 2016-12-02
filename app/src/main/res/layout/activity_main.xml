@@ -15,12 +15,46 @@
         android:gravity="center"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
-        android:textColor="@android:color/white"
         android:text="手机快速注册"
+        android:textColor="@android:color/white"
         android:textSize="22sp" />
 
     <!--手机、密码、验证码  hint-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/update_password_item_bg_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:text="手\t机:"
+            android:textSize="16sp" />
+
+        <!--
+        android:inputType="number"  限定输入类型为 数字
+        android:maxLength="11"  输入的数字的最大长度是 11
+        -->
+        <EditText
+            android:id="@+id/edit_phone_user"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="3"
+            android:background="@android:color/white"
+            android:hint="请输入您的手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+    </LinearLayout>
 
 
     <!--可以勾选的协议-->
